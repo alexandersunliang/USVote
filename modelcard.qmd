@@ -5,6 +5,7 @@ author:
 date: today
 date-format: long
 format: pdf
+thanks: 'https://github.com/alexandersunliang/USVote'
 ---
 
 #### Model Details

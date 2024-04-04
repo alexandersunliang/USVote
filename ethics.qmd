@@ -4,6 +4,7 @@ author:
   - "Alexander Sun"
 date: today
 date-format: long
+thanks: 'https://github.com/alexandersunliang/USVote'
 format: pdf
 ---
 

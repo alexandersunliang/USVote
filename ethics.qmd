@@ -1,0 +1,53 @@
+---
+title: "Three ethical considerations"
+author: 
+  - "Alexander Sun"
+date: today
+date-format: long
+format: pdf
+---
+
+# Bias
+
+It is essential to consider the impacts of bias when implementing a predictive model. Features such as race, gender, and age, while potentially predictive, may also perpetuate or exacerbate existing biases. For instance, if historical voting data reflects varying political engagement among racial groups, models trained on these features could inadvertently reinforce biases, leading to predictions that further marginalize underrepresented groups. Ethical modeling practices necessitate the implementation bias mitigation strategies, such as ensuring demographic parity in predictions or employing algorithms designed to reduce bias in outcomes across different groups.
+
+# Transparency
+
+As models increase in complexity, they become more difficult for the general public to understand, raising concerns about transparency. When we engineer features from raw data or interpret complex ideas (like political ideology from survey responses), it is essential to explain clearly why and how we use these features in our model. This clarity ensures that everyone, especially those affected by the model’s predictions, can follow the model's logic.
+
+Additionally, the complexity of a model can make it harder to show how specific features lead to certain predictions, which is critical for identifying and correcting biases. The challenge is to balance the benefits of more sophisticated models, which can provide more accurate and insightful predictions, with the need to keep these models understandable to people without technical expertise.
+
+# Privacy and Data Protection
+
+Incorporating individual-level features into models, especially those derived from sensitive personal data (e.g., voter files), necessitates a rigorous approach to privacy and data protection. Ethical considerations encompass not only the legal compliance with data protection regulations but also broader concerns about the potential for misuse or unintended consequences of data handling practices. Anonymization and data minimization principles should be applied to reduce the risk of re-identification or privacy breaches. Furthermore, it is essential to ensure that individuals are aware of and consent to the ways in which their data is being used. This aspect is particularly important when models might impact individual rights or access to resources, underlining the need for a privacy-centric approach for data.
+
+### **Dataset Testing**
+
+1. **Integrity and Consistency Checks:** 
+    - Validate dataset completeness, identify missing values and duplicates, and ensure correct data type assignments.
+    
+2. **Privacy and Security Checks:** 
+    - Test the security of the dataset with hacking attempts
+    - Evaluate the privacy by trying to identify individuals through names if public, and/or id
+
+3. **Bias Detection:** 
+    - Assess representation across key demographic variables (e.g., age, gender, race) to identify and mitigate potential biases, supporting ethical use of data.
+
+### **Model Testing**
+
+1. **Fairness Assessment:** 
+    - Compute performance metrics by demographic group to identify disparities, addressing ethical concerns by implementing bias mitigation strategies as necessary.
+
+2. **Robustness Testing:** 
+    - Challenge the model with weird data to evaluate resilience, ensuring reasonable model behavior under strenuous conditions.
+
+### **Predictions Testing**
+
+1. **Real-world Testing:** 
+    - Compare model predictions against actual outcomes to validate effectiveness, recalibrating the model as needed based on performance.
+
+2. **Interpretability and Explainability:** 
+    - Use surveys and interviews to ensure model decisions are transparent and interpretable by a standard audience.
+
+
+

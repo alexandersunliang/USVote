@@ -1,0 +1,78 @@
+---
+title: "Model Card for CES 2020 Voter Behaviour Prediction Model"
+author: 
+  - "Alexander Sun"
+date: today
+date-format: long
+format: pdf
+---
+
+#### Model Details
+
+-   **Developing Organization:** University of Toronto
+
+-   **Model Date:** April 3rd 2024
+
+-   **Model Version:** 1.0
+
+-   **Model Type:** Supervised Learning - Classification
+
+-   **Training Algorithms:** Gradient Boosting Machines (GBM)
+
+-   **Parameters and Approaches:** Used grid search for hyperparameter optimization, applied SMOTE for handling class imbalance
+
+-   **Fairness Constraints:** Evaluated and adjusted for demographic parity in predictions across race and gender
+
+-   **Features:** Demographic information, political affiliations, CES survey responses, past voting behavior
+
+-   **License:** MIT License
+
+-   **Contact:** alexander.sun\@mail.utoronto.ca
+
+#### Intended Use
+
+-   **Primary Uses:** To predict individual voting behavior for future elections based on demographic, geographic, and political factors
+
+-   **Primary Users:** Political scientists, policy analysts, and academic researchers
+
+-   **Out-of-Scope Uses:** Commercial advertising targeting, predicting non-US elections
+
+#### Factors
+
+-   **Relevant Factors:** Age, gender, race/ethnicity, geographic location, party affiliation
+
+#### Metrics
+
+-   **Performance Measures:** Accuracy, Precision, Recall, F1 Score, AUC-ROC
+
+-   **Decision Thresholds:** Chosen based on maximizing the F1 score to balance precision and recall
+
+-   **Variation Approaches:** Performance metrics evaluated separately for each demographic group to identify disparities
+
+#### Evaluation Data
+
+-   **Datasets:** 2020 US Cooperative Election Study (CES) and a US voter file
+
+-   **Preprocessing:** Anonymization of personal data and handling missing values
+
+#### Training Data
+
+-   **Details:** The training data consists of the same CES 2020 dataset and voter file
+
+#### Quantitative Analyses
+
+-   **Results:** Analysis of model performance across intersections of demographic factors
+
+#### Ethical Considerations
+
+-   **Privacy and Data Protection:** Ensured by anonymizing personal information and compliance with relevant data protection regulations
+
+-   **Bias Mitigation:** Identified and reduced predictive bias across demographic groups
+
+#### Caveats and Recommendations
+
+-   **Caveats:** Model predictions are based on historical data and may not account for future changes in voter behavior or preferences.
+
+-   **Recommendations:** Users should apply the model taking into consideration the model's limitations and the evolving political landscape. Regular updates to the model and its underlying data are recommended to maintain accuracy and relevance.
+
+
